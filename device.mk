@@ -443,6 +443,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# XiaomiParts
+#XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
