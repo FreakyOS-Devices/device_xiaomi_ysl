@@ -21,21 +21,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
-# Inherit some common RR stuff.
-
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common FreakyOS stuff.
+$(call inherit-product, vendor/freaky/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
+TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := OFFICIAL
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.user=Amith Acharya
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-#RR-Stuff
-RR_BUILDTYPE := Official
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := rr_ysl
+PRODUCT_NAME := freaky_ysl
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
 PRODUCT_MANUFACTURER := Xiaomi

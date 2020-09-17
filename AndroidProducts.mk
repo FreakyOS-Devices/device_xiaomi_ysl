@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2020 The FreakyOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/rr_ysl.mk
+     $(LOCAL_DIR)/freaky_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-rr_ysl-user \
-rr_ysl-userdebug \
-rr_ysl-eng	
+freaky_ysl-user \
+freaky_ysl-userdebug \
+freaky_ysl-eng
+

@@ -1,0 +1,17 @@
+[
+    {
+        "repository":   "vendor_xiaomi_ysl",
+        "target_path":  "vendor/xiaomi",
+        "revision":     "still_alive"
+    },
+    {
+        "repository":   "kernel_xiaomi_cannon",
+        "target_path":  "kernel/xiaomi/msm8953",
+        "revision":     "still_alive"
+    },
+    {
+        "repository":   "vendor_MiuiCamera_ysl",
+        "target_path":  "vendor/MiuiCamera",
+        "revision":     "still_alive"
+    }
+]
